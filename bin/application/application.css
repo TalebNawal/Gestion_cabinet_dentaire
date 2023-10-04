@@ -1,0 +1,118 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.back_login{
+	-fx-padding: 0 0 10 0;
+	-fx-background-color: rgba(255, 255, 255, .7);
+	-fx-background-radius: 30px;	
+}
+.backgnd{
+	-fx-background-color: rgba(255, 255, 255, .7);
+	-fx-background-radius: 30px;	
+}
+.background {
+	-fx-background-image: url('./back.jpg');
+	-fx-background-repeat: no-repeat; 
+	-fx-background-size: cover; 
+	-fx-background-position: center center;
+}
+.button_dentiste{
+	-fx-background-radius: 30px 0 0 0;
+}
+.button_assistant{
+	-fx-background-radius: 0 30px 0 0;
+}
+.toggle1 {
+    -fx-background-color: rgba(233, 242, 245, 1);
+    -fx-border-color: rgba(252, 207, 3, .3);
+    -fx-border-width: 0 0 5 0 ; 
+    -fx-border-insets: 0 0 -5px 0;
+    -fx-text-fill: rgba(0, 0, 0, .5);
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.3) , 20,0,0,0 );
+}
+.toggle1:selected {
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-border-color: rgba(252, 207, 3, .7);
+    -fx-text-fill: rgba(252, 207, 3, 1);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.Menu {
+	-fx-background-color: rgba(255, 255, 255, .7);
+	/*-fx-border-color: rgba(252, 255, 255, .5);
+	-fx-border-width: 0 5 0 0 ;*/
+}
+.profile {
+	-fx-background-image: url('./profile.jpg');
+	-fx-background-repeat: no-repeat; 
+	-fx-background-size: cover; 
+	-fx-background-position: center center;
+	-fx-background-radius: 50px;
+}
+.table {
+	-fx-background-color:  transparent;
+}
+.table-column {
+  	-fx-alignment: CENTER;
+}
+/* 
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: red;
+}
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #1dbbdd44, #93f9b944);
+}
+.table-row-cell:highlighted {
+    -fx-background-color: #81c483;
+    -fx-background-radius: 15px;
+}*/

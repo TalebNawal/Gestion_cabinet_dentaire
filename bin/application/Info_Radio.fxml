@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Info_RadioController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1508.0" minWidth="10.0" percentWidth="25.0" prefWidth="616.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1509.0" minWidth="10.0" percentWidth="75.0" prefWidth="1304.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane styleClass="Menu" stylesheets="@application.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="19.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="264.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="17.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="354.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="710.0" minHeight="6.0" percentHeight="20.0" prefHeight="195.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="916.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="820.0" minHeight="10.0" prefHeight="820.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="9">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="32.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="354.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="35.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="356.0" text="2022/03/13 15:05:00" textAlignment="CENTER" textFill="#f5c903" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="430.0" text="D. OUAZIZI AYOUB" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="449.0" text="Dentiste" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Button mnemonicParsing="false" onAction="#SeDeconnecter" prefHeight="93.0" prefWidth="423.0" text="Se déconnecter" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <ToggleButton fx:id="Accueil_button" mnemonicParsing="false" onAction="#Accueil" prefHeight="106.0" prefWidth="423.0" text="Accueil" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Gr" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="users_button" mnemonicParsing="false" onAction="#users" prefHeight="106.0" prefWidth="423.0" text="Gérer les utilisateurs" toggleGroup="$Gr" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="patients_button" mnemonicParsing="false" onAction="#patients" prefHeight="106.0" prefWidth="423.0" text="Gérer les patients" toggleGroup="$Gr" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </GridPane>
+            <Circle fx:id="circle" fill="DODGERBLUE" radius="76.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="30.0" />
+               </GridPane.margin>
+            </Circle>
+         </children>
+      </GridPane>
+      <GridPane prefHeight="1080.0" prefWidth="1450.0" GridPane.columnIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1041.0" minWidth="50.0" prefWidth="81.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1333.0" minWidth="10.0" prefWidth="1276.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="640.0" minWidth="25.0" prefWidth="85.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="44.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="642.0" minHeight="96.0" prefHeight="636.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="44.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="293.0" minHeight="293.0" prefHeight="293.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="44.0" prefHeight="48.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane styleClass="backgnd" stylesheets="@application.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="100.0" minHeight="40.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="342.0" minHeight="10.0" prefHeight="322.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1008.0" minWidth="10.0" prefWidth="424.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="637.0" minWidth="10.0" prefWidth="429.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="10.0" prefWidth="422.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="219.0" minHeight="10.0" prefHeight="219.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Separator orientation="VERTICAL" prefHeight="257.0" prefWidth="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="2" />
+                        <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+                        <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                        <Separator prefWidth="200.0" GridPane.valignment="BOTTOM" />
+                        <Label text="Remarques Generales" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="Remarques Positives" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="Remarques Negatives" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rmqG" alignment="CENTER" prefHeight="245.0" prefWidth="502.0" textAlignment="JUSTIFY" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="rmqP" alignment="CENTER" prefHeight="245.0" prefWidth="502.0" textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="rmqN" alignment="CENTER" prefHeight="245.0" prefWidth="502.0" textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ImageView fx:id="editRmqG" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#editG" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@edit-icon-png-3602.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="editRmqP" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#editP" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@edit-icon-png-3602.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="editRmqN" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#editN" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@edit-icon-png-3602.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="saveG" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#saveRqG" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@save.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <TextArea fx:id="GText" prefHeight="200.0" prefWidth="200.0" visible="false" wrapText="true" GridPane.rowIndex="1" />
+                        <ImageView fx:id="saveP" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#saveRqP" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@save.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <TextArea fx:id="PText" prefHeight="200.0" prefWidth="200.0" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ImageView fx:id="saveN" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#saveRqN" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@save.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <TextArea fx:id="NText" prefHeight="200.0" prefWidth="200.0" visible="false" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Label text="Les Remarques" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane styleClass="backgnd" stylesheets="@application.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="181.0" minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="588.0" minHeight="10.0" prefHeight="588.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Informations du radio" textAlignment="CENTER" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1008.0" minWidth="10.0" prefWidth="638.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="643.0" minWidth="10.0" prefWidth="637.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane prefHeight="425.0" prefWidth="220.0" GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="249.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="416.0" minWidth="0.0" prefWidth="27.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="416.0" minWidth="10.0" prefWidth="331.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="310.0" text="IDRadio" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="214.0" text=":" textAlignment="CENTER" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="id" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="448.0" text="1" textAlignment="CENTER" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <GridPane prefHeight="425.0" prefWidth="220.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="416.0" minWidth="10.0" prefWidth="320.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label fx:id="dateRadio" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="187.0" text="AAAAA AAAAAAA" textAlignment="CENTER" GridPane.halignment="CENTER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="editDate" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#editDt" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+                                       <image>
+                                          <Image url="@edit-icon-png-3602.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="save" fitHeight="31.0" fitWidth="28.0" onMouseClicked="#saveEdit" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="RIGHT">
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                       <image>
+                                          <Image url="@save.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <DatePicker fx:id="dateChoice" visible="false" GridPane.halignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="259.0" text="DateRadio" textAlignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="214.0" text=":" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </GridPane>
+                        <ImageView fx:id="imgRadio" fitHeight="560.0" fitWidth="616.0" onMouseClicked="#image" onMousePressed="#image" pickOnBounds="true" preserveRatio="true">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <ImageView fx:id="delete" accessibleRole="BUTTON" fitHeight="32.0" fitWidth="30.0" onMouseClicked="#deleteRadio" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+                     <image>
+                        <Image url="@trash.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="20.0" top="10.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <ImageView accessibleRole="BUTTON" fitHeight="44.0" fitWidth="41.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="18.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>
